@@ -20,7 +20,7 @@ console.log(btn);
 // 왜 btn에 addEventListner를 다는게 안될까?
 // btn이 htmlcollection안의 객체의 배열 [0]인데 지정을 안해줘서 <- 왜 갑자기 htmlcollection에 들어가 있지?
 btn[0].addEventListener("click", function(){
-  for(let i =0; i<55; i++){
+  for(let i =0; i<55; i++){// 여기의 ()안의 i는 ()안에서만 적용됨 -> ()전체가 몇번 반복할 거라는 숫자 지정인 셈 -> 그래서 for 문 안에 i 안써도 반복됨
     let hello = "hello"
     console.log(hello[0]);
   };
