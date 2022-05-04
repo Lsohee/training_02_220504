@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <button></button>
+  </div>
+
+  <script>
+const root = document.getElementById("root");
+// console.dir(root);
+const btn = document.getElementsByTagName("button");
+console.log(btn);
+
+// 왜 btn에 addEventListner를 다는게 안될까?
+// btn이 htmlcollection안의 객체의 배열 [0]인데 지정을 안해줘서 <- 왜 갑자기 htmlcollection에 들어가 있지?
+btn[0].addEventListener("click", function(){
+  for(let i =0; i<55; i++){
+    console.log("hello");
+  };
+});
+
+/* 
+1. 버튼을 클릭했을때 (이벤트 발생)
+2. 55번 반복 (반복문 사용)
+*/
+
+    
+
+
+    
+  </script>
+  
+</body>
+</html>
